@@ -5,10 +5,10 @@
 /* 边框颜色 */
 /* 图片加载中颜色 */
 /* 行为相关颜色 */
-page.data-v-3424ef3d {
+page.data-v-2699a978 {
   background-color: #fff;
 }
-.userinfo .user-section.data-v-3424ef3d {
+.userinfo .user-section.data-v-2699a978 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -23,7 +23,7 @@ page.data-v-3424ef3d {
   overflow: hidden;
   position: relative;
 }
-.userinfo .user-section .bg.data-v-3424ef3d {
+.userinfo .user-section .bg.data-v-2699a978 {
     position: absolute;
     left: 0;
     top: 0;
@@ -33,18 +33,18 @@ page.data-v-3424ef3d {
             filter: blur(1px);
     opacity: .7;
 }
-.userinfo .user-section .portrait-box.data-v-3424ef3d {
+.userinfo .user-section .portrait-box.data-v-2699a978 {
     clear: both;
     z-index: 2;
 }
-.userinfo .user-section .portrait.data-v-3424ef3d {
+.userinfo .user-section .portrait.data-v-2699a978 {
     position: relative;
     width: 200rpx;
     height: 200rpx;
     border-radius: 50%;
     border: 6rpx solid #fff;
 }
-.userinfo .user-section .yticon.data-v-3424ef3d {
+.userinfo .user-section .yticon.data-v-2699a978 {
     position: absolute;
     line-height: 1;
     z-index: 5;
@@ -54,18 +54,18 @@ page.data-v-3424ef3d {
     border-radius: 6rpx;
     background: rgba(0, 0, 0, 0.4);
 }
-.userinfo .user-section .pt-upload-btn.data-v-3424ef3d {
+.userinfo .user-section .pt-upload-btn.data-v-2699a978 {
     right: 0;
     bottom: 10rpx;
 }
-.userinfo .user-section .bg-upload-btn.data-v-3424ef3d {
+.userinfo .user-section .bg-upload-btn.data-v-2699a978 {
     right: 20rpx;
     bottom: 16rpx;
 }
-.userinfo .input-content.data-v-3424ef3d {
+.userinfo .input-content.data-v-2699a978 {
   padding: 40rpx 60rpx;
 }
-.userinfo .input-content .input-item.data-v-3424ef3d {
+.userinfo .input-content .input-item.data-v-2699a978 {
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
@@ -76,42 +76,42 @@ page.data-v-3424ef3d {
     border-radius: 4px;
     margin-bottom: 30rpx;
 }
-.userinfo .input-content .input-item.data-v-3424ef3d:last-child {
+.userinfo .input-content .input-item.data-v-2699a978:last-child {
       margin-bottom: 0;
 }
-.userinfo .input-content .input-item .tit.data-v-3424ef3d {
+.userinfo .input-content .input-item .tit.data-v-2699a978 {
       width: 90rpx;
       font-size: 26rpx;
       color: #606266;
 }
-.userinfo .input-content .input-item input.data-v-3424ef3d {
+.userinfo .input-content .input-item input.data-v-2699a978 {
       height: 80rpx;
       line-height: 80rpx;
       font-size: 30rpx;
       color: #303133;
 }
-.userinfo .input-content .input-item .date.data-v-3424ef3d {
+.userinfo .input-content .input-item .date.data-v-2699a978 {
       height: 80rpx;
       line-height: 80rpx;
       font-size: 30rpx;
       color: #303133;
 }
-.userinfo .input-content .input-item .gender.data-v-3424ef3d {
+.userinfo .input-content .input-item .gender.data-v-2699a978 {
       margin: 10rpx 0;
       color: #303133;
       font-size: 28rpx;
 }
-.userinfo .input-content .input-item .gender .gender-item.data-v-3424ef3d {
+.userinfo .input-content .input-item .gender .gender-item.data-v-2699a978 {
         margin-right: 10rpx;
 }
-.userinfo .input-content .input-item .gender .gender-item .gender-item-text.data-v-3424ef3d {
+.userinfo .input-content .input-item .gender .gender-item .gender-item-text.data-v-2699a978 {
           padding: 0 5rpx;
 }
-.userinfo .input-content .input-item .gender .gender-item radio .wx-radio-input.wx-radio-input-checked.data-v-3424ef3d {
+.userinfo .input-content .input-item .gender .gender-item radio .wx-radio-input.wx-radio-input-checked.data-v-2699a978 {
           background: #fa436a;
           border-color: #fa436a;
 }
-.userinfo .input-content .confirm-btn.data-v-3424ef3d {
+.userinfo .input-content .confirm-btn.data-v-2699a978 {
     width: 630rpx;
     height: 76rpx;
     line-height: 76rpx;
@@ -121,7 +121,7 @@ page.data-v-3424ef3d {
     color: #fff;
     font-size: 32rpx;
 }
-.userinfo .input-content .confirm-btn.data-v-3424ef3d:after {
+.userinfo .input-content .confirm-btn.data-v-2699a978:after {
       border-radius: 100px;
 }
 

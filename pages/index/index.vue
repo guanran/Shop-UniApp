@@ -138,7 +138,7 @@
 				
 				current: 0,
 				headerShow: true,
-				carouselList: {},
+				// carouselList: {},
 				hotProductList: [],
 				recommendProductList: [],
 				guessYouLikeProductList: [],
@@ -180,19 +180,19 @@
 		onPullDownRefresh() {
 			this.getIndexList('refresh');
 		},
-		onLoad() {
-			this.loadData();
-		},
+		// onLoad() {
+		// 	this.loadData();
+		// },
 		methods: {
-			async loadData() {
-				let carouselList = await this.$api.json('carouselList');
-				this.titleNViewBackground = carouselList[0].background;
-				this.swiperLength = carouselList.length;
-				this.carouselList = carouselList;
+			// async loadData() {
+			// 	let carouselList = await this.$api.json('carouselList');
+			// 	this.titleNViewBackground = carouselList[0].background;
+			// 	this.swiperLength = carouselList.length;
+			// 	this.carouselList = carouselList;
 				
-				let goodsList = await this.$api.json('goodsList');
-				this.goodsList = goodsList || [];
-			},
+			// 	let goodsList = await this.$api.json('goodsList');
+			// 	this.goodsList = goodsList || [];
+			// },
 			//跳转查询页面
 			navToSeach(){
 				uni.navigateTo({
@@ -286,16 +286,28 @@
 			// 获取主页数据
 			async getIndexList(type) {
 				await this.$get(`${indexList}`, {}).then(async r => {
-          this.loading = false;
+					this.loading = false;
 					// // 获取商户列表
-					// this.getMerchantIndex();
+					 this.getMerchantIndex();
 					// 获取公告列表
 					this.getNotifyAnnounceIndex();
 					if (type === 'refresh') {
 						uni.stopPullDownRefresh();
 					}
 					this.productCateList = r.data.cate;
-					this.carouselList = r.data.adv;
+					// this.carouselList = r.data.adv;
+					
+					// 静态数据
+					let carouselList = await this.$api.json('carouselList');
+					this.titleNViewBackground = carouselList[0].background;
+					this.swiperLength = carouselList.length;
+					this.carouselList = carouselList;
+					
+					let goodsList = await this.$api.json('goodsList');
+					this.goodsList = goodsList || [];
+					// 静态数据end
+					
+					
 					this.search = r.data.search;
 					uni.setStorageSync('search', this.search);
 					this.hotSearchDefault = '请输入关键字' + (r.data.search.hot_search_default ? '如:' + r.data.search.hot_search_default : '');
@@ -354,11 +366,23 @@
 			this.$api.msg('点击了搜索框');
 			this.navToSeach();
 		},
+		
+		
 		//点击导航栏 buttons 时触发
 		onNavigationBarButtonTap(e) {
 			const index = e.index;
+			const cpage=this;
 			if (index === 0) {
-				this.$api.msg('点击了扫描');
+				cpage.$api.msg('点击了扫描');
+				uni.scanCode({
+					success:function(res){
+						console.log('类型：'+res.scanType);
+						console.log('内容：'+res.result);
+						
+						cpage.$api.msg("(" +res.result+")"+'不是有效内容');
+					}
+				})
+				
 			} else if (index === 1) {
 				// #ifdef APP-PLUS
 				const pages = getCurrentPages();

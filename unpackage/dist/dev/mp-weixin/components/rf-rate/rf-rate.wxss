@@ -5,7 +5,7 @@
 /* 边框颜色 */
 /* 图片加载中颜色 */
 /* 行为相关颜色 */
-.uni-rate.data-v-33aaca1e {
+.uni-rate.data-v-cd22b028 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -16,15 +16,15 @@
   -webkit-flex-direction: row;
           flex-direction: row;
 }
-.iconfont.data-v-33aaca1e {
+.iconfont.data-v-cd22b028 {
   font-size: 44rpx;
 }
-.uni-rate__icon.data-v-33aaca1e {
+.uni-rate__icon.data-v-cd22b028 {
   position: relative;
   line-height: 0;
   font-size: 0;
 }
-.uni-rate__icon-on.data-v-33aaca1e {
+.uni-rate__icon-on.data-v-cd22b028 {
   overflow: hidden;
   position: absolute;
   top: 0;
