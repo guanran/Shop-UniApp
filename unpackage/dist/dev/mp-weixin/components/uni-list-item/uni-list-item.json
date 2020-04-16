@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "rf-badge": "/components/rf-badge/rf-badge"
+  }
+}

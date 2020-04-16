@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "评价列表",
+  "usingComponents": {
+    "rf-rate": "/components/rf-rate/rf-rate"
+  }
+}

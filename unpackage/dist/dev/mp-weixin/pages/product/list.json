@@ -1,0 +1,11 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "商品列表",
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "rf-search-bar": "/components/rf-search-bar/rf-search-bar",
+    "rf-load-more": "/components/rf-load-more/rf-load-more",
+    "rf-loading": "/components/rf-loading/rf-loading",
+    "rf-recommend": "/components/rf-recommend/rf-recommend"
+  }
+}
