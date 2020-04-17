@@ -757,7 +757,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2803,6 +2803,8 @@ exports.hostUrl = hostUrl;var rechargeUrl = "".concat(hostUrl, "/pages/user/acco
 
 // 后台接口请求地址
 exports.rechargeUrl = rechargeUrl;var baseUrl = "http://demo2.rageframe.com/api";
+
+//const baseUrl = "http://localhost:8021";
 
 // websocket服务端地址
 exports.baseUrl = baseUrl;var websocketUrl = "";
@@ -8677,7 +8679,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8698,14 +8700,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -8781,7 +8783,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -15022,14 +15024,15 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.wholesaleGroupState = exports.wholesaleView = exports.wholesaleIndex = exports.wholesaleProductIndex = exports.cartItemCount = exports.cartItemUpdateSku = exports.orderProductExpressDetails = exports.orderPreview = exports.evaluateList = exports.orderFreightFee = exports.orderPay = exports.orderClose = exports.orderCreate = exports.cartItemUpdateNum = exports.cartItemClear = exports.cartItemDel = exports.cartItemList = exports.cartItemCreate = exports.productDetail = exports.guessYouLikeList = exports.productList = exports.productCateList = exports.productCate = exports.indexList = void 0; /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         *@des 产品营销
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         *@author stav stavyan@qq.com
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         *@blog https://stavtop.club
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         *@date 2019/11/18 13:57:54
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
+Object.defineProperty(exports, "__esModule", { value: true });exports.wholesaleGroupState = exports.wholesaleView = exports.wholesaleIndex = exports.wholesaleProductIndex = exports.cartItemCount = exports.cartItemUpdateSku = exports.orderProductExpressDetails = exports.orderPreview = exports.evaluateList = exports.orderFreightFee = exports.orderPay = exports.orderClose = exports.orderCreate = exports.cartItemUpdateNum = exports.cartItemClear = exports.cartItemDel = exports.cartItemList = exports.cartItemCreate = exports.productDetail = exports.guessYouLikeList = exports.productList = exports.productCateList = exports.productCate = exports.indexList = exports.carouselList = void 0; /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *@des 产品营销
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *@author stav stavyan@qq.com
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *@blog https://stavtop.club
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *@date 2019/11/18 13:57:54
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+var carouselList = "/indexapi/carouselList";
 // 首页列表
-var indexList = "/tiny-shop/v1/index/index";
+exports.carouselList = carouselList;var indexList = "/tiny-shop/v1/index/index";
 // 产品分类列表
 exports.indexList = indexList;var productCate = "/tiny-shop/v1/product/cate/index";
 // 首页推荐分类

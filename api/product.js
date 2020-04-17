@@ -4,6 +4,7 @@
  *@blog https://stavtop.club
  *@date 2019/11/18 13:57:54
  */
+const carouselList="/indexapi/carouselList"
 // 首页列表
 const indexList = "/tiny-shop/v1/index/index";
 // 产品分类列表
@@ -62,6 +63,7 @@ const wholesaleGroupState = "/tiny-shop/v1/marketing/wholesale/group-state";
 
 
 export {
+	carouselList,
     indexList,
     productCate,
     productCateList,

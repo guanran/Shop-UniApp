@@ -3,7 +3,7 @@ module.exports = {
   // baseUrl: "https://testyfxcx.ehousechina.com/",
   //baseUrl: "http://localhost:50777/",
   //baseUrl: "https://pmls.ehousechina.com/",
-  baseUrl: "http://localhost:50789/",
+  baseUrl: "http://localhost:8021/",
 
   //生成分页信息dataStatus res
   getPageInfo:function(obj){

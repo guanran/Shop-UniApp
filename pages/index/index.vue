@@ -119,7 +119,8 @@
 	 * @date 2020-01-08 14:14
 	 * @copyright 2019
 	 */
-	import {indexList, wholesaleProductIndex} from "@/api/product";
+	
+	import {indexList, carouselList, wholesaleProductIndex} from "@/api/product";
 	import {merchantIndex} from "@/api/merchant";
 	import rfSwipeDot from '@/components/rf-swipe-dot/rf-swipe-dot';
 	import rfFloorIndex from '@/components/rf-floor-index/rf-floor-index';
@@ -143,7 +144,6 @@
 				recommendProductList: [],
 				guessYouLikeProductList: [],
 				newProductList: [],
-				productCateList: [],
 				brandList: [],
 				config: {},
 				index: 0,
@@ -184,15 +184,6 @@
 		// 	this.loadData();
 		// },
 		methods: {
-			// async loadData() {
-			// 	let carouselList = await this.$api.json('carouselList');
-			// 	this.titleNViewBackground = carouselList[0].background;
-			// 	this.swiperLength = carouselList.length;
-			// 	this.carouselList = carouselList;
-				
-			// 	let goodsList = await this.$api.json('goodsList');
-			// 	this.goodsList = goodsList || [];
-			// },
 			//跳转查询页面
 			navToSeach(){
 				uni.navigateTo({
@@ -285,40 +276,44 @@
 			},
 			// 获取主页数据
 			async getIndexList(type) {
-				await this.$get(`${indexList}`, {}).then(async r => {
+				
+				
 					this.loading = false;
-					// // 获取商户列表
-					 this.getMerchantIndex();
+					
+					//轮播图
+					this.getCarouselList();
+					
+					// 获取商户列表
+					//this.getMerchantIndex();
 					// 获取公告列表
 					this.getNotifyAnnounceIndex();
+					
+					//下拉事件
 					if (type === 'refresh') {
 						uni.stopPullDownRefresh();
 					}
-					this.productCateList = r.data.cate;
 					// this.carouselList = r.data.adv;
 					
+				
+					
 					// 静态数据
-					let carouselList = await this.$api.json('carouselList');
-					this.titleNViewBackground = carouselList[0].background;
-					this.swiperLength = carouselList.length;
-					this.carouselList = carouselList;
+					// let carouselList = await this.$api.json('carouselList');
+					// this.titleNViewBackground = carouselList[0].background;
+					// this.swiperLength = carouselList.length;
+					// this.carouselList = carouselList;
 					
 					let goodsList = await this.$api.json('goodsList');
 					this.goodsList = goodsList || [];
 					// 静态数据end
 					
 					
-					this.search = r.data.search;
-					uni.setStorageSync('search', this.search);
-					this.hotSearchDefault = '请输入关键字' + (r.data.search.hot_search_default ? '如:' + r.data.search.hot_search_default : '');
-					uni.setStorage({
-						key: 'hotSearchDefault',
-						data: r.data.search.hot_search_default
-					});
-					this.hotProductList = r.data.product_hot;
-					this.recommendProductList = r.data.product_recommend;
-					this.guessYouLikeProductList = r.data.guess_you_like;
-					this.newProductList = r.data.product_new;
+		
+					//推荐
+					// this.hotProductList = r.data.product_hot;
+					// //新品
+					// this.recommendProductList = r.data.product_recommend;
+					// this.guessYouLikeProductList = r.data.guess_you_like;
+					// this.newProductList = r.data.product_new;
 					this.config = r.data.config;
 				}).catch(err => {
 					this.loading = false;
@@ -339,6 +334,25 @@
 					this.announceList = r.data
 				})
 			},
+			//轮播图
+			async getCarouselList() {
+				// await this.$get(`${merchantIndex}`, {}).then(r => {
+				// 	this.merchantList = r.data
+				// 	this.index = uni.getStorageSync('merchantIndex') || r.data.length - 1;
+				// })
+				
+				
+				
+				await this.$get(`${carouselList}`, {}).then(r => {
+					console.log(r);
+					let carouselList = r.data.TData;
+					this.titleNViewBackground = carouselList[0].background;
+					this.swiperLength = carouselList.length;
+					this.carouselList = carouselList;
+				})
+			},
+			
+			
 			// 跳转至商品详情页
 			navToDetailPage(data) {
 				const {id} = data;

@@ -5,7 +5,9 @@ const hostUrl = "http://h5.tinyshop.rageframe.com";
 const rechargeUrl = `${hostUrl}/pages/user/account/recharge`;
 
 // 后台接口请求地址
-const baseUrl = "http://demo2.rageframe.com/api";
+ const baseUrl = "http://demo2.rageframe.com/api";
+
+//const baseUrl = "http://localhost:8021";
 
 // websocket服务端地址
 const websocketUrl = "";
