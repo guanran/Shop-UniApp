@@ -9,7 +9,7 @@
 						v-for="(item, index) in list"
 						:key="index">
           <view class="text in1line">
-						<text class="newsTitle">{{ item.title || `${item.member_nickname} 拼团成功` }}</text>
+						<text class="newsTitle">{{ item.sTitle }}</text>
 					</view>
 	        <text class="iconfont iconyou right"></text>
         </swiper-item>

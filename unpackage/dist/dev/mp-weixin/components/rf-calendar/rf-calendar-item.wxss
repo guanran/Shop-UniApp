@@ -5,7 +5,7 @@
 /* 边框颜色 */
 /* 图片加载中颜色 */
 /* 行为相关颜色 */
-.uni-calendar-item__weeks-box.data-v-5fb67d70 {
+.uni-calendar-item__weeks-box.data-v-5fc3f583 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
@@ -23,15 +23,15 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.uni-calendar-item__weeks-box-text.data-v-5fb67d70 {
+.uni-calendar-item__weeks-box-text.data-v-5fc3f583 {
   font-size: 22rpx;
   color: #333;
 }
-.uni-calendar-item__weeks-lunar-text.data-v-5fb67d70 {
+.uni-calendar-item__weeks-lunar-text.data-v-5fc3f583 {
   font-size: 18rpx;
   color: #333;
 }
-.uni-calendar-item__weeks-box-item.data-v-5fb67d70 {
+.uni-calendar-item__weeks-box-item.data-v-5fc3f583 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -48,7 +48,7 @@
           align-items: center;
   height: 85rpx;
 }
-.uni-calendar-item__weeks-box-circle.data-v-5fb67d70 {
+.uni-calendar-item__weeks-box-circle.data-v-5fc3f583 {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -57,28 +57,28 @@
   border-radius: 8px;
   background-color: #dd524d;
 }
-.uni-calendar-item--disable.data-v-5fb67d70 {
+.uni-calendar-item--disable.data-v-5fc3f583 {
   background-color: rgba(249, 249, 249, 0.3);
   color: #c0c0c0;
 }
-.uni-calendar-item--isDay-text.data-v-5fb67d70 {
+.uni-calendar-item--isDay-text.data-v-5fc3f583 {
   color: #fa436a;
 }
-.uni-calendar-item--isDay.data-v-5fb67d70 {
+.uni-calendar-item--isDay.data-v-5fc3f583 {
   background-color: #fa436a;
   opacity: 0.8;
   color: #fff;
 }
-.uni-calendar-item--extra.data-v-5fb67d70 {
+.uni-calendar-item--extra.data-v-5fc3f583 {
   color: #dd524d;
   opacity: 0.8;
 }
-.uni-calendar-item--checked.data-v-5fb67d70 {
+.uni-calendar-item--checked.data-v-5fc3f583 {
   background-color: #fa436a;
   color: #fff;
   opacity: 0.8;
 }
-.uni-calendar-item--multiple.data-v-5fb67d70 {
+.uni-calendar-item--multiple.data-v-5fc3f583 {
   background-color: #fa436a;
   color: #fff;
   opacity: 0.8;

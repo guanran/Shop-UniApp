@@ -5,7 +5,7 @@
 /* 边框颜色 */
 /* 图片加载中颜色 */
 /* 行为相关颜色 */
-.container.data-v-52d1b6ec {
+.container.data-v-857bd832 {
   padding-top: 60px;
   position: relative;
   width: 100vw;
@@ -13,14 +13,14 @@
   overflow: hidden;
   background: #fff;
 }
-.container .wrapper.data-v-52d1b6ec {
+.container .wrapper.data-v-857bd832 {
     position: relative;
     width: 100vw;
     z-index: 90;
     background: #fff;
     padding-bottom: 40rpx;
 }
-.container .wrapper .welcome.data-v-52d1b6ec {
+.container .wrapper .welcome.data-v-857bd832 {
       position: relative;
       left: 50rpx;
       top: -90rpx;
@@ -28,10 +28,10 @@
       color: #555;
       text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3);
 }
-.container .wrapper .input-content.data-v-52d1b6ec {
+.container .wrapper .input-content.data-v-857bd832 {
       padding: 0 60rpx;
 }
-.container .wrapper .input-item.data-v-52d1b6ec {
+.container .wrapper .input-item.data-v-857bd832 {
       display: -webkit-box;
       display: -webkit-flex;
       display: flex;
@@ -51,35 +51,35 @@
       border-radius: 4px;
       margin-bottom: 50rpx;
 }
-.container .wrapper .input-item.data-v-52d1b6ec:last-child {
+.container .wrapper .input-item.data-v-857bd832:last-child {
         margin-bottom: 0;
 }
-.container .wrapper .input-item .tit.data-v-52d1b6ec {
+.container .wrapper .input-item .tit.data-v-857bd832 {
         height: 50rpx;
         line-height: 56rpx;
         font-size: 26rpx;
         color: #606266;
 }
-.container .wrapper .input-item input.data-v-52d1b6ec {
+.container .wrapper .input-item input.data-v-857bd832 {
         height: 60rpx;
         font-size: 30rpx;
         color: #303133;
         width: 100%;
 }
-.container .wrapper .input-item-sms-code.data-v-52d1b6ec {
+.container .wrapper .input-item-sms-code.data-v-857bd832 {
       position: relative;
 }
-.container .wrapper .input-item-sms-code .sms-code-btn.data-v-52d1b6ec {
+.container .wrapper .input-item-sms-code .sms-code-btn.data-v-857bd832 {
         position: absolute;
         right: 20rpx;
         color: #111;
         bottom: 20rpx;
         font-size: 28rpx;
 }
-.container .wrapper .input-item-sms-code .sms-code-resend.data-v-52d1b6ec {
+.container .wrapper .input-item-sms-code .sms-code-resend.data-v-857bd832 {
         color: #999;
 }
-.container .wrapper .confirm-btn.data-v-52d1b6ec {
+.container .wrapper .confirm-btn.data-v-857bd832 {
       width: 630rpx;
       height: 76rpx;
       line-height: 76rpx;
@@ -89,16 +89,16 @@
       color: #fff;
       font-size: 32rpx;
 }
-.container .wrapper .confirm-btn.data-v-52d1b6ec:after {
+.container .wrapper .confirm-btn.data-v-857bd832:after {
         border-radius: 100px;
 }
-.container .wrapper .forget-section.data-v-52d1b6ec {
+.container .wrapper .forget-section.data-v-857bd832 {
       font-size: 26rpx;
       color: #4399fc;
       text-align: center;
       margin-top: 40rpx;
 }
-.container .back-btn.data-v-52d1b6ec {
+.container .back-btn.data-v-857bd832 {
     position: absolute;
     left: 40rpx;
     z-index: 9999;
@@ -107,31 +107,31 @@
     font-size: 40rpx;
     color: #303133;
 }
-.container .left-top-sign.data-v-52d1b6ec {
+.container .left-top-sign.data-v-857bd832 {
     font-size: 120rpx;
     color: #f8f8f8;
     position: relative;
     left: -16rpx;
 }
-.container .right-top-sign.data-v-52d1b6ec {
+.container .right-top-sign.data-v-857bd832 {
     position: absolute;
     top: 80rpx;
     right: -30rpx;
     z-index: 95;
 }
-.container .right-top-sign.data-v-52d1b6ec:before, .container .right-top-sign.data-v-52d1b6ec:after {
+.container .right-top-sign.data-v-857bd832:before, .container .right-top-sign.data-v-857bd832:after {
       display: block;
       content: "";
       width: 400rpx;
       height: 80rpx;
       background: #b4f3e2;
 }
-.container .right-top-sign.data-v-52d1b6ec:before {
+.container .right-top-sign.data-v-857bd832:before {
       -webkit-transform: rotate(50deg);
               transform: rotate(50deg);
       border-radius: 0 50px 0 0;
 }
-.container .right-top-sign.data-v-52d1b6ec:after {
+.container .right-top-sign.data-v-857bd832:after {
       position: absolute;
       right: -198rpx;
       top: 0;
@@ -140,24 +140,24 @@
       border-radius: 50px 0 0 0;
       /* background: pink; */
 }
-.container .register-section.data-v-52d1b6ec {
+.container .register-section.data-v-857bd832 {
     margin: 30rpx 0 50rpx;
     width: 100%;
     font-size: 26rpx;
     color: #606266;
     text-align: center;
 }
-.container .register-section text.data-v-52d1b6ec {
+.container .register-section text.data-v-857bd832 {
       color: #4399fc;
       margin-left: 10rpx;
 }
-.footer.data-v-52d1b6ec {
+.footer.data-v-857bd832 {
   width: 100%;
   text-align: center;
   margin: 20rpx 0 20rpx;
   font-size: 26rpx;
 }
-.footer .protocol.data-v-52d1b6ec {
+.footer .protocol.data-v-857bd832 {
     color: #fa436a;
     margin: 0 10rpx;
 }
